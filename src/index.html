@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>UI MENU</title>
+    <!--<base href="/">-->
+
+    <link rel="stylesheet" href="styles/app.css">
+
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="../bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="app/app.module.js"></script>
+
+    <script src="app/dashboard/dashboard.module.js"></script>
+    <script src="app/dashboard/dashboard.route.js"></script>
+    <script src="app/dashboard/favorites/favorites.controller.js"></script>
+    <script src="app/dashboard/analytics/analytics.controller.js"></script>
+
+    <script src="app/admin/admin.module.js"></script>
+    <script src="app/admin/admin.route.js"></script>
+    <script src="app/admin/account/account.controller.js"></script>
+    <script src="app/admin/notification/notification.controller.js"></script>
+    <script src="app/admin/tools/tools.controller.js"></script>
+    <!--  -->
+    <script src="app/blocks/exception/exception.module.js"></script>
+    <script src="app/blocks/logger/logger.module.js"></script>
+    <script src="app/blocks/router/router.module.js"></script>
+    <script src="app/core/core.module.js"></script>
+    <!--  -->
+    <script src="app/layout/layout.module.js"></script>
+    <!--  -->
+    <script src="app/blocks/exception/exception-handler.provider.js"></script>
+    <script src="app/blocks/exception/exception.js"></script>
+    <script src="app/blocks/logger/logger.js"></script>
+    <script src="app/blocks/router/router-helper.provider.js"></script>
+    <script src="app/core/config.js"></script>
+    <script src="app/core/core.route.js"></script>
+    <!--  -->
+    <script src="app/layout/shell.controller.js"></script>
+    <script src="app/layout/sidebar.controller.js"></script>
+</head>
+<body>
+    <div ng-include="'app/layout/shell.html'"></div>
+</body>
+</html>

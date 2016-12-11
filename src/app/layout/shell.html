@@ -1,0 +1,14 @@
+<div ng-controller="ShellController as vm">
+    <header>
+        <nav class="navbar"><p>Top Navbar</p></nav>
+    </header>
+
+    <main>
+        <div ng-include="'app/layout/sidebar.html'"></div>
+        <div class="content" ui-view=""></div>
+    </main>
+
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
+</div>

@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    flex: none;
+}
+
+main {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    flex: auto;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #64bbff;
+}
+
+.sidebar {
+    position: absolute;
+    margin: 50px 0;
+    height: calc(100% - 102px);
+    width: 256px;
+    border: 1px solid rgba(52,75,78,0.51);
+}
+
+.content {
+    position: absolute;
+    margin: 50px 0 50px 256px;
+    padding: 0 16px 16px 16px;
+    height: calc(100% - 102px);
+    width: calc(100% - 256px);
+    border: 1px solid rgba(52,75,78,0.51);
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #dfe1ff;
+}
